@@ -127,6 +127,10 @@ class MaverickAuthFormState extends State<MaverickAuthForm> {
                     child: const Text('Sign In'),
                   ),
                 ),
+                const SizedBox(height: 10),
+                TextButton(
+                    onPressed: () {}, child: const Text('Forgot Password?')),
+                const SizedBox(height: 10),
                 TextButton(
                   onPressed: () {
                     setState(() {
