@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
@@ -6,10 +7,11 @@ ThemeData lightTheme = ThemeData(
   primaryColor: Colors.blue.shade300,
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
-        backgroundColor:
-            MaterialStateProperty.resolveWith((states) => Colors.blue),
-        foregroundColor:
-            MaterialStateProperty.resolveWith((states) => Colors.white)),
+      backgroundColor:
+          MaterialStateProperty.resolveWith((states) => Colors.blue),
+      foregroundColor:
+          MaterialStateProperty.resolveWith((states) => Colors.white),
+    ),
   ),
 );
 
