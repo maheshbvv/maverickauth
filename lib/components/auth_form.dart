@@ -8,22 +8,14 @@ class MaverickAuthForm extends StatefulWidget {
 }
 
 class MaverickAuthFormState extends State<MaverickAuthForm> {
+  TextEditingController firstName = TextEditingController();
+  TextEditingController lastName = TextEditingController();
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
+  TextEditingController confirmPassword = TextEditingController();
+  bool onlyOnSignUp = false;
   @override
   Widget build(BuildContext context) {
-    TextEditingController firstName = TextEditingController();
-    TextEditingController lastName = TextEditingController();
-    TextEditingController email = TextEditingController();
-    TextEditingController password = TextEditingController();
-    TextEditingController confirmPassword = TextEditingController();
-    bool onlyOnSignUp = false;
-
-    @override
-    @override
-    void initState() {
-      super.initState();
-      onlyOnSignUp = false;
-    }
-
     return Scaffold(
       body: Center(
         child: SingleChildScrollView(
@@ -143,7 +135,7 @@ class MaverickAuthFormState extends State<MaverickAuthForm> {
                   },
                   child: onlyOnSignUp
                       ? const Text('Already have an account? Sign In')
-                      : const Text('Create an Account'),
+                      : const Text('Create an Acccount'),
                 ),
               ],
             ),
