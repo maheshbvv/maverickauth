@@ -5,6 +5,7 @@ ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
   primarySwatch: Colors.blue,
   primaryColor: Colors.blue.shade300,
+  fontFamily: GoogleFonts.gafata().fontFamily,
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
       backgroundColor:
